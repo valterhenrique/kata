@@ -1,27 +1,23 @@
 public class TwoSum {
 
   public static void main(String[] args){
-    int result[] = new Solution().twoSum(new int[]{9,2,17,2}, 19);
+    int result[] = new Solution().twoSum(new int[]{2,7,11,15}, 9);
     System.out.println(result[0] + "," + result[1]);
   }
 }
 
 class Solution {
   public int[] twoSum(int[] nums, int target) {
-    int result[] = new int[2];
-    // http://stackoverflow.com/a/886979
-    loop:
     for (int i = 0; i < nums.length; i++){
       for (int j = 0; j < nums.length; j++){
         if (i != j){
           if ((nums[i] + nums[j]) == target){
-            result = new int[]{i,j};
-            break loop;
+            return new int[]{i,j};
           }
         }
       }
     }
-    return result;
+    return new int[2];
   }
 }
 
