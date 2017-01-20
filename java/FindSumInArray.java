@@ -1,7 +1,8 @@
 import java.util.Random;
 
 public class FindSumInArray {
-
+  // https://www.careercup.com/question?id=6285101383024640
+  
   public static void main(String[] args){
     int[] array = new int[]{1,-10,18,29,75,12,3};
     int k = 15;
