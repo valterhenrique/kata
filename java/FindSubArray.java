@@ -1,6 +1,7 @@
 public class FindSubArray {
   public static void main(String[] args){
-
+    // Given an array, find a subarray within. Return the index of the original array is started.
+    
     int[] original = new int[]{1,2,3,4,5,9,8,7,6};
     int[] sub = new int[]{4,5,9};
     int iFound = new FindSubArray().find(original,sub);
